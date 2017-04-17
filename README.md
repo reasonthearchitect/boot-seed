@@ -1,6 +1,6 @@
-# generator-kar-boot 
+# generator-boot-seed
 
-> A generator for the KAR microservices projects.
+> A generator for the Seed microservices projects.
 
 ## Installation
 Install node: [node.js](https://nodejs.org/))
@@ -15,7 +15,7 @@ npm install -g yo
 
 Git clone this repository into a folder on your computer.
 
-cd into the generator-kar-boot folder.
+cd into the generator-seed-boot folder.
 
 Run the following to install and link the generator:
 ```
@@ -34,21 +34,21 @@ Cd into the folder.
 Then generate your new project:
 
 ```bash
-yo kar-boot
+yo boot-seed
 This will install the base project
 
 ```bash
-yo kar-boot:datastore
+yo boot-seed:datastore
 ```
 Pick JPA and a JPA datastore will be added.
 
 ```bash
-yo kar-boot:data 
+yo boot-seed:data 
 ```
 Add a noun(Taco) and create an entity but not a field.
 
 ```bash
-yo kar-boot:stack
+yo boot-seed:stack
 ```
 Adds the plumbing. 
 
