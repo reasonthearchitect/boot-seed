@@ -23,7 +23,8 @@
     "yosay": "^1.2.1",
     "figlet": "^1.1.2",
     "clear": "0.0.1",
-    "insight": "0.8.3"
+    "insight": "0.8.3",
+    "pluralize": "4.0.0"
   },
   "devDependencies": {
     "yeoman-test": "^1.6.0",
