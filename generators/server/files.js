@@ -26,9 +26,12 @@ function writeFiles() {
             this.copy('microservice-architecture.md',   'microservice-architecture.md');
             this.copy('gitignore',                      '.gitignore');
             this.copy('editorconfig',                   '.editorconfig');
+            this.copy('dockerignore',                   '.dockerignore');
 
             this.template('_README.md',                 'README.md', this, {});
             this.template('_Jenkinsfile',               'Jenkinsfile', this, {});
+            this.template('_Dockerfile',                'Dockerfile', this, {});
+            this.template('_docker-compose.yml',        'docker-compose.yml', this, {});
         },
 
         writeGradleFiles: function() {

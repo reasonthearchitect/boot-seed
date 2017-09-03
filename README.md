@@ -74,3 +74,21 @@ Intelij
 ```
 gradle cleanidea idea
 ```
+
+## Run the seed generator into a Docker Container
+To build the image:
+
+```bash
+cd generator-boot-seed
+docker build -t generator-boot-seed -f Dockerfile.seed .
+```
+
+To run the image:
+```bash
+docker run -it -v /Users/<username>/seed_dest:/src generator-boot-seed:latest /bin/bash
+```
+
+Then you can jump on 'Create your own repo' section and type those instructions into the Container.
+The application will be generated in the /app directory of the container. 
+Then cp * -r your /app to your /src folder which is a volume mounted on your own computer.
+And cp * -r your /usr/local/lib/node_modules/generator-boot-seed/node_modules to /src/node_modules.
